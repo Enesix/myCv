@@ -8,31 +8,80 @@
     <meta name="description" content="">
     <meta name="author" content="Cannesson Melvin">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/icons.css" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="css/cv.less">
     <title>CV Cannesson</title>
 </head>
 
 <body>
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="less.min.js"></script>
-
-    <header>
-        <ol class="breadcrumb bread-primary menu">
-            <a href="#Formations"><button href="#" class="btn btn-primary"><i class="fa fa-newspaper-o"></i> Formations </button></a>
-            <li><a href="#Experiences">Expériences</a></li>
-            <li><a href="#Competences">Compétences</a></li>
-            <li><a href="#Loisirs">Loisirs</a></li>
-        </ol>
-    </header>
     <div class="container">
+        <nav id="navBar" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mes informations</a>
+            </div>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#Formations" class="icon-graduation-cap">Formations</a></li>
+                    <li><a href="#Experiences" class="icon-briefcase">Expériences</a></li>
+                    <li><a href="#Competences" class="icon-html5">Compétences</a></li>
+                    <li><a href="#Loisirs" class="icon-gamepad">Loisirs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="paddingNavBar" />
+        <div id="blockMe">
+            <ul class="media-list col-lg-offset-3 col-lg-6">
+                <li class="media thumbnail">
+                    <a class="pull-left" href="#">
+                     <img alt="Photo Melvin Cannesson" class="img-circle" src="https://media.licdn.com/dms/image/C4E03AQHYEUvz-Z5zdg/profile-displayphoto-shrink_200_200/0?e=1534377600&amp;v=beta&amp;t=BiWqjlHmV5bAnLSUTVrQhyVXAMe4RWxY5ADG5Fo2-kY">
+              </a>
+                    <div class="media-body">
+                        <ul class="col-lg-8 list-unstyled">
+                            <li>
+                                <span>Melvin </span><span>Cannesson</span>
+                            </li>
+                            <li>
+                                <div class="row ">
+                                    <span class="col-lg-3 ">&Acirc;ge: </span>
+                                    <span class="col-lg-9">30 ans</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <span class="col-lg-3 ">Adresse: </span>
+                                    <span class="col-lg-9">44710, Port Saint Père</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <span class="col-lg-3 ">Poste: </span>
+                                    <span class="col-lg-9">Développeur chez Delaware consulting</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <span class="col-lg-3 ">Mail: </span>
+                                    <span class="col-lg-9"><a href="mailto:melvin.cannesson@gmail.com"> Melvin.Cannesson@gmail.com</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-lg-offset-0 col-lg-11">
+                        <a target="_blank" href="https://www.linkedin.com/in/CannessonMelvin"><img class="li-logo" src="img/LinkedIn_Logo.svg" alt="linkedin lien"> </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--
         <div class="col-lg-4 aboutMe well">
             <div class="row">
-                <h1 class="col-lg-12">A propos de moi</h1>
+                <h1 class="col-lg-12">&Agrave; propos de moi</h1>
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-lg-4 img-rounded photoPerso">
-                            <img class="" alt="Photo Melvin Cannesson" src="https://media.licdn.com/dms/image/C4E03AQHYEUvz-Z5zdg/profile-displayphoto-shrink_200_200/0?e=1534377600&amp;v=beta&amp;t=BiWqjlHmV5bAnLSUTVrQhyVXAMe4RWxY5ADG5Fo2-kY">
+                        <div class="col-lg-4 photoPerso">
+                            <img alt="Photo Melvin Cannesson" class="img-circle" src="https://media.licdn.com/dms/image/C4E03AQHYEUvz-Z5zdg/profile-displayphoto-shrink_200_200/0?e=1534377600&amp;v=beta&amp;t=BiWqjlHmV5bAnLSUTVrQhyVXAMe4RWxY5ADG5Fo2-kY">
                         </div>
                         <ul class="col-lg-8 list-unstyled">
                             <li>
@@ -40,7 +89,7 @@
                             </li>
                             <li>
                                 <div class="row ">
-                                    <span class="col-lg-3 ">Age: </span>
+                                    <span class="col-lg-3 ">&Acirc;ge: </span>
                                     <span class="col-lg-9">30 ans</span>
                                 </div>
                             </li>
@@ -70,6 +119,7 @@
                 </div>
             </div>
         </div>
+-->
 
         <div class="row">
             <div id="BlockFormations" class="well">
@@ -189,6 +239,11 @@
             </div>
         </div>
     </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="less.min.js"></script>
 </body>
 <footer>
     <div class="row">
